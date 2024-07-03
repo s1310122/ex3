@@ -22,10 +22,10 @@ int main(){
     }
 printf("Heads:%d, Tails:%d\n", count_H, count_T);
 
-     if(count_H > count_T) {
-        printf("You won\n");
+if(count_H > count_T) {
+        printf("%s won!\n", name);
     } else {
-        printf("You lost\n");
+        printf("%s lost!\n", name);
     }
 
     return 0;
