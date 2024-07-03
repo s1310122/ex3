@@ -2,6 +2,11 @@
 #include <stdlib.h>
 
 int main(){
+     char name[100];
+    printf("Who are you?\n>");
+    scanf("%s", name);
+    printf("Hello,%s\n", name);
+    
     int count_H=0, count_T=0;
     printf("Tossing a coin...\n");
     for(int i=1;i<4;i++){
@@ -17,10 +22,10 @@ int main(){
     }
 printf("Heads:%d, Tails:%d\n", count_H, count_T);
 
-    if(count_H > count_T) {
-        printf("You won\n");
+if(count_H > count_T) {
+        printf("%s won!\n", name);
     } else {
-        printf("You lost\n");
+        printf("%s lost!\n", name);
     }
 
     return 0;
